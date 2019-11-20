@@ -1,0 +1,26 @@
+{
+  "name": "json-interface2class",
+  "version": "1.0.0",
+  "description": "A library to help casting interface-like objects in parsed json into class-like object",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "author": "longfangsong",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "bash -c ./src/Test/test.sh",
+    "build": "webpack -p --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
