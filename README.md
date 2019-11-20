@@ -40,11 +40,7 @@ let before = `{
             }
           }`;
 let config = new Map<Function, Function>();
-config.set((obj: any) => {
-    if (typeof obj == "object") {
-        return obj.hasOwnProperty("name") && obj.hasOwnProperty("date")
-        }
-    }, DumbClass.from);
+config.set((obj: any) => typeof obj == "object" && obj.hasOwnProperty("name") && obj.hasOwnProperty("date"), DumbClass.from);
 let after: { a: DumbClass } = jsonStringToObject(JSON.parse(before), config);
 expect(after.a.describe).eq("abc-2019");
 ```
