@@ -1,6 +1,6 @@
 {
   "name": "json-interface2class",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A library to help casting interface-like objects in parsed json into class-like object",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
