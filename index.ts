@@ -1,6 +1,6 @@
 type ConvertConfig = Map<Function, Function>;
 
-export function jsonStringToObject(jsonParsedObject: any, config: ConvertConfig) {
+export function jsonStringToObject(jsonParsedObject: any, config: ConvertConfig): any {
     if (typeof jsonParsedObject === "string") {
         for (let [key, value] of config) {
             if (key(jsonParsedObject)) {

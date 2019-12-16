@@ -19,6 +19,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
         library: 'json-string',
-        libraryTarget: "umd"
+        libraryTarget: 'umd',
+        globalObject: 'this'
     }
 };
